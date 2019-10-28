@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".Auth.MyData">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_keyboard_backspace_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="Профиль (Администратор)"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/update_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/ic_refresh_black_24dp"/>
+                    <ImageView
+                        android:id="@+id/exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/ic_exit_to_app_black_24dp"/>
+                </LinearLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/name_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/name"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Имя"
+                        tools:targetApi="o" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/number_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/number"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:inputType="phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Номер телефона"
+                        tools:targetApi="o"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/job_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/job"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Должность"
+                        tools:targetApi="o"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/e-mail_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/e-mail"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginLeft="20dp"
+                        android:hint="Электронная почта"
+                        tools:targetApi="o"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Switch
+                    android:id="@+id/sms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="@dimen/text_size1"
+                    android:textColor="@color/colorText1"
+                    android:text="sms рассылка" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Заявки"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/header_size1"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/orders_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</FrameLayout>

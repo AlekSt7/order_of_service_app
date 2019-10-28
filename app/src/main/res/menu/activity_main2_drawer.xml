@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/ic_new_releases_black_24dp"
+            android:title="Новости" />
+        <item
+            android:id="@+id/about_company"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="О компаниии" />
+        <item
+            android:id="@+id/my_data"
+            android:checkableBehavior="none"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="Мои данные" />
+        <item
+            android:id="@+id/contacts"
+            android:icon="@drawable/ic_contact_phone_black_24dp"
+            android:title="Контакты" />
+    </group>
+
+    <item android:title="Готовые решения">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/e_ocher"
+                android:icon="@drawable/ic_people_black_24dp"
+                android:title="Электронная очередь" />
+            <item
+                android:id="@+id/digital_signage"
+                android:icon="@drawable/ic_personal_video_black_24dp"
+                android:title="Цифровые вывески" />
+            <item
+                android:id="@+id/tesosq"
+                android:icon="@drawable/ic_mood_black_24dp"
+                android:title="СОКОК" />
+            <item
+                android:id="@+id/digital_consultant"
+                android:icon="@drawable/ic_camera_front_black_24dp"
+                android:title="Электронный консультант" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

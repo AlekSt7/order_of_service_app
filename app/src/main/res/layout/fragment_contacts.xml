@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contacts.Contacts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:context="com.imaadv.leaynik.ClinicFragment" />
+
+        <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Контакты"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Телефон:\n
+8(800) 555-05-15\n
+8(495) 374-52-13\n
+E-mail: office@dolphins.ru.com\n\n
+
+Наименование юридического лица: ООО «Долфинс АйТи»\n
+Генеральный директор: Сазанский Иван Маркович\n
+Адрес: 115114, г. Москва, ул. Дербеневская наб., д. 11, офис Б509\n
+ОГРН: 1077746010605 от 10.01.2007 МИФНС № 46 по г. Москве\n
+ИНН/КПП: 7723597952/772501001\n
+Код ОКАТО: 45296559000\n
+Код по ОКПО: 98985370\n
+Расчетный счет: р/сч 40702810601300004540 в ОАО «АЛЬФА-БАНК» \n
+(ИНН 7728168971, ОГРН 1027700067328, БИК 044525593,
+кор/сч № 30101810200000000593 в ОПЕРУ МОСКОВСКОГО ГТУ БАНКА РОССИИ)\n
+доп. офис «Пятницкая» ОАО «АЛЬФА-БАНК»"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

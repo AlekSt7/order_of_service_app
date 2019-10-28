@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="75dp"
+                android:gravity="left"
+                android:text="Цифровые вывески"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/header_size1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="38dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Количество \nустанавливаемых \nобъектов:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+                <TextView
+                    android:id="@+id/object_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Консультация"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Количество экранов \nразного размера:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+                <TextView
+                    android:id="@+id/size_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/type_la"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Тип крепления экранов:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Пол"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/size_la"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Размер экранов:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text='18-24"'
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/object_on_la"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Количество экранов на объект:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+                <TextView
+                    android:id="@+id/object_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="5"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/touch_screen_la"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Сенсорный экран:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+                <TextView
+                    android:id="@+id/touch_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Нет"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Уникальный контент\nна каждом экране:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+                <TextView
+                    android:id="@+id/unique_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Да"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Поддержка 4k контента:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+                <TextView
+                    android:id="@+id/k_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Консультация"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Проводка:"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/text_size2" />
+            <TextView
+                android:id="@+id/wire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Места подготовлены к подключению"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Тип установки проекта:"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/text_size2" />
+            <TextView
+                android:id="@+id/installing_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нашими специалистами"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/commentHeader1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Комментарий:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size1" />
+
+            <TextView
+                android:id="@+id/comment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Тестовый комментарий"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="20dp"
+                android:textSize="@dimen/text_size2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

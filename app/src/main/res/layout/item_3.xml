@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="61dp"
+                    android:gravity="left"
+                    android:text="Электронная очередь"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/header_size1"
+                    />
+
+
+        <ImageView
+            android:id="@+id/delete_e_ocher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+
+            android:src="@drawable/ic_delete_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="38dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/operator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество операторов:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size2" />
+            <TextView
+                android:id="@+id/operator_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/terminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество терминалов:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size2" />
+            <TextView
+                android:id="@+id/terminal_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/signange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Главное табло 42 дюйма:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size2" />
+            <TextView
+                android:id="@+id/signange_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size2" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Примерная стоимость:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="95 000 ₽"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size2" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/commentHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Комментарий:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size1" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Тестовый комментарий"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/text_size2" />
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
